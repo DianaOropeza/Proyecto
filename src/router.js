@@ -5,7 +5,7 @@ const changTmp = (hash)=>{
     if(hash==="/#" || hash===""|| hash==="#"){
         return viewTmp('#singIn');
     }
-    else if(hash==="#/SingIn" ||hash==="#/Home"){
+    else if(hash==="#/SingIn" ||hash==="#/Notes"){
         return viewTmp(hash);
     }
     else return viewTmp("#/SingIn");
@@ -16,8 +16,8 @@ const viewTmp = (routers)=>{
  const root = document.getElementById('root');
  root.innerHTML='';
  switch(router){
-     case 'home':
-     root.appendChild(Home());
+     case 'Notes':
+     root.appendChild(Notes());
      break;
      
      case'SingIn':

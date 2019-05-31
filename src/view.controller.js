@@ -8,6 +8,6 @@ export const signInSubmit=()=>{
     const email=document.querySelector('#email').value;
     const password=document.querySelector('#password').value;
     singIn(email,password)
-    .then(()=> changeHash('/home'))
+    .then(()=> changeHash('/Notes'))
     .catch(()=>{})
 }
